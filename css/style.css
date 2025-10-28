@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');/*letra header-parrafos*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap'); /*letra titulos*/
+
+*{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    background-color: #050505;
+    color: #c7c7c7;
+}
+h2 span{
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: italic;
+}
+
+
+h1{
+    font-size: 0;
+    background-image: url(../assets/logo/80w/logo2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+}
+.user{
+    background-color: #c11a1a;
+    border-radius: 100%;
+    padding: 4px 5px;
+}
+.user a{
+    font-size: 0;
+}
+.nav-link:hover{
+    color: #d42a2a!important;
+    text-decoration: overline;
+}
+
+strong{
+    color: #ce3232;
+}
+em{
+    font-style: italic;
+}
+.nos{
+    background-color: transparent;
+    background-image: url(../assets/au.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.nos h2{
+    font-size: 4em;
+}
+.nos h2 span{
+    color: #c11a1a;
+    font-weight: 900;
+    font-style: italic;
+}
+.user picture img{
+    width: 30px;
+}
+.info-nosotros{
+    width: 50%;
+}
+.sabermas{
+    background-color: #c11a1a;
+    width: 140px;
+    transition: all 120ms ease-in;
+}
+.sabermas:hover{
+    background-color: #d44b4b;
+}
+
+@media screen and (max-width:1200px) {
+    .nos{
+        background-image: url(../assets/au_600.png);
+        text-align: center;
+    }
+    .info-nosotros p,.info-nosotros, .sabermas{
+        margin: 0 auto;
+    }
+    .info-nosotros{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 75%;
+    }
+    .info-nosotros p{
+        font-size: 20px!important;
+    }
+}
+@media screen and (max-width:768px) {
+    .navbar-collapse ul li{
+        margin: 8px 0;
+        background-color: #5e1313;
+        width: 100vw;
+        padding: 13px;
+    }
+    .nos h2{
+    font-size: 4.5em;
+    }
+    .info-nosotros p{
+        font-size: 18px!important;
+    }
+}
+@media screen and (max-width:560px) {
+    .nos{
+        justify-content: center;
+    }
+    .nos h2{
+    font-size: 3.5em;
+    }
+}
+@media screen and (max-width:460px) {
+    .info-nosotros{
+        width: 85%;
+    }
+    .info-nosotros p{
+        font-size: 17px!important;
+    }
+}
+@media screen and (max-width:300px) {
+    .nos h2{
+        margin-top: 10px;
+        font-size: 2.5em;
+    }
+    .info-nosotros{
+        width: 90%;
+    }
+}
