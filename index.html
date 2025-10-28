@@ -9,7 +9,7 @@
 </head>
 <body>
     <header id="up" class="d-flex flex-column flex-md-row align-items-center justify-content-evenly p-3">
-        <h1 class="mx-auto mx-md-0 mb-2 mb-md-0">EchoWay</h1>
+        <h1 id="h1-header" class="mx-auto mx-md-0 mb-2 mb-md-0">EchoWay</h1>
 
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid justify-content-evenly">
@@ -33,12 +33,64 @@
         </nav>
 
         <div class="user">
-            <a href="#">
-                Informacion de los creadores
+            <a id="a-modal" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Datos de alumnos
                 <picture>
                     <img src="assets/usuario.png" alt="Informacion de los creadores">
                 </picture>
             </a>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content w-auto bg-dark">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Datos de los Alumnos</h1>
+                    <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body modal-alumnos">
+                    <div class="alumno">
+                        <picture>
+                            <img src="assets/foto-personal/luca250.jpg" alt="Foto personal de Juani">
+                        </picture>
+                        <ul>
+                            <li>Juan Ignacio Peralta</li>
+                            <li>...</li>
+                            <li><a href="mailto:...">...@gmail.com</a></li>
+                            <li>
+                                <ul class="ul-alumno">
+                                    <li><a href="#">Instagram <img src="assets/redes/ig.png" alt="Logo Instagram"></a></li>
+                                    <li><a href="#">Linkedin <img src="assets/redes/linkedin.png" alt="Logo Linkedin"></a></li>
+                                    <li><a href="#">Facebook <img src="assets/redes/facebook.png" alt="Logo Facebook"></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="alumno">
+                        <picture>
+                            <img src="assets/foto-personal/luca250.jpg" alt="Foto personal de Luca">
+                        </picture>
+                        <ul>
+                            <li>Luca Lebeda</li>
+                            <li>11/01/2007 (18 años)</li>
+                            <li><a href="mailto:lucalebeda@gmail.com">lucalebeda@gmail.com</a></li>
+                            <li>
+                                <ul class="ul-alumno">
+                                    <li><a href="#">Instagram <img src="assets/redes/ig.png" alt="Logo Instagram"></a></li>
+                                    <li><a href="#">Linkedin <img src="assets/redes/linkedin.png" alt="Logo Linkedin"></a></li>
+                                    <li><a href="#">Facebook <img src="assets/redes/facebook.png" alt="Logo Facebook"></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+            </div>
         </div>
 
     </header>

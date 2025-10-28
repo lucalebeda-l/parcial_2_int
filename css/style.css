@@ -12,13 +12,12 @@ body{
 }
 h2 span{
     font-family: "Merriweather", serif;
-    font-optical-sizing: auto;
     font-weight: 600;
     font-style: italic;
 }
 
 
-h1{
+#h1-header{
     font-size: 0;
     background-image: url(../assets/logo/80w/logo2.png);
     background-position: center;
@@ -31,9 +30,6 @@ h1{
     background-color: #c11a1a;
     border-radius: 100%;
     padding: 4px 5px;
-}
-.user a{
-    font-size: 0;
 }
 .nav-link:hover{
     color: #d42a2a!important;
@@ -77,6 +73,56 @@ em{
     background-color: #d44b4b;
 }
 
+#a-modal{
+    font-size: 0;
+}
+#a-modal:hover{
+    cursor: pointer;
+}
+.user:hover{
+    background-color: #e94848;
+}
+
+.modal-alumnos{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+.alumno{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.2em;
+}
+.alumno a{
+    color: #c11a1a;
+}
+.alumno a:hover{
+    color: #d44b4b;
+}
+.alumno picture img{
+    width: 250px;
+}
+.ul-alumno{
+    display: flex;
+    gap: 20px;
+    align-content: center;
+    padding: 0;
+}
+.ul-alumno li{
+    list-style: none;
+}
+.ul-alumno li a{
+    font-size: 0;
+}
+.ul-alumno li a img{
+    height: 30px;
+}
+.ul-alumno li a img:hover{
+    transform: scale(1.05);
+}
+
+
 @media screen and (max-width:1200px) {
     .nos{
         background-image: url(../assets/au_600.png);
@@ -92,7 +138,7 @@ em{
         width: 75%;
     }
     .info-nosotros p{
-        font-size: 20px!important;
+        font-size: 1.3em!important;
     }
 }
 @media screen and (max-width:768px) {
@@ -106,7 +152,7 @@ em{
     font-size: 4.5em;
     }
     .info-nosotros p{
-        font-size: 18px!important;
+        font-size: 1.2em!important;
     }
 }
 @media screen and (max-width:560px) {
@@ -122,7 +168,7 @@ em{
         width: 85%;
     }
     .info-nosotros p{
-        font-size: 17px!important;
+        font-size: 1.1em!important;
     }
 }
 @media screen and (max-width:300px) {
