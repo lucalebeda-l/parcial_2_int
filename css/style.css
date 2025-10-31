@@ -20,8 +20,11 @@ h2 span{
     font-family: "Merriweather", serif;
     font-weight: 600;
     font-style: italic;
+    color: var(--main-color);
 }
-
+header{
+    background-color: #010203;
+}
 #h1-header{
     font-size: 0;
     background-image: url(../assets/logo/80w/logo2.png);
@@ -89,6 +92,14 @@ em{
     background-color: hsla(from var(--main-color) h 50 60);
 }
 
+
+.modal-header{
+    background-color: var(--main-color);
+    color: #c7c7c7;
+}
+.modal-header h2{
+    font-weight: 700;
+}
 .modal-alumnos{
     display: flex;
     justify-content: space-evenly;
@@ -139,13 +150,19 @@ em{
 }
 
 .card{
-    box-shadow: 0px 0px 15px 0px hsla(from var(--main-white) h s l / 50%);
+    box-shadow: 0px 0px 10px 0px hsla(from var(--main-white) h s l / 50%);
     background-color: hsla(from var(--main-black) h 0 10);
     color: var(--main-white);
+    transition: all 140ms ease-in-out;
 }
 .card-title{
     color: var(--main-color);
 }
+.card:hover{
+    box-shadow: 0px 0px 25px 0px hsla(from var(--main-color) h s l / 50%);
+    background-color: hsla(from var(--main-color) h 0 10);
+}
+
 
 @media screen and (max-width:1200px) {
     .nos{
