@@ -92,7 +92,6 @@ em{
     background-color: hsla(from var(--main-color) h 50 60);
 }
 
-
 .modal-header{
     background-color: var(--main-color);
     color: #c7c7c7;
@@ -163,6 +162,17 @@ em{
     background-color: hsla(from var(--main-color) h 0 10);
 }
 
+.accordion{
+    --bs-accordion-color: var(--main-white);
+    --bs-accordion-bg: var(--main-black);
+    --bs-accordion-border-color: var(--main-color);
+    --bs-accordion-btn-color: var(--main-white);
+    --bs-accordion-btn-bg: var(--main-black);
+    --bs-accordion-btn-focus-border-color: var(--main-color);
+    --bs-accordion-btn-focus-box-shadow: var(--main-color);
+    --bs-accordion-active-color: var(--main-white);
+    --bs-accordion-active-bg: var(--main-color);
+}
 
 @media screen and (max-width:1200px) {
     .nos{
@@ -181,6 +191,10 @@ em{
     .info-nosotros p{
         font-size: 1.3em!important;
     }
+    #preguntas{
+        width: 50%;
+        margin: auto;
+    }
 }
 @media screen and (max-width:768px) {
     .navbar-collapse ul li{
@@ -194,6 +208,11 @@ em{
     }
     .info-nosotros p{
         font-size: 1.2em!important;
+    }
+
+    #preguntas{
+        width: 70%;
+        margin: auto;
     }
 }
 @media screen and (max-width:560px) {
