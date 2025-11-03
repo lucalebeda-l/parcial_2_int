@@ -162,13 +162,15 @@ em{
 
 .anim-black{
     --mask-image: url('../assets/img/mask-black_512.png');
+    overflow: hidden;
 }
 .anim-azul{
     --mask-image: url('../assets/img/mask-azul_512.png');
-
+    overflow: hidden;
 }
 .anim-rosa{
     --mask-image: url('../assets/img/mask-rosa_512.png');
+    overflow: hidden;
 }
 
 .anim-black .product, .anim-azul .product, .anim-rosa .product{
@@ -176,6 +178,12 @@ em{
     overflow: hidden;
 }
 
+.anim-black:hover .product::before, .anim-azul:hover .product::before, .anim-rosa:hover .product::before{
+    content: linear-gradient(180deg, hsla(from var(--main-color) h s l / 50%) 0%, rgba(31, 36, 40, 0) 100%);
+    position: absolute;
+    inset: 0;
+    mix-blend-mode: lighten;
+}
 .anim-black:hover .product::after, .anim-azul:hover .product::after, .anim-rosa:hover .product::after{
     content: '';
     position: absolute;
@@ -214,7 +222,7 @@ em{
     }
 }
 
-.anim-black:hover .product, .anim-azul:hover .product, .anim-rosa:hover .product {
+/* .anim-black:hover .product, .anim-azul:hover .product, .anim-rosa:hover .product {
     mask-image: var(--mask-image);
     mask-size: cover; 
     -webkit-mask-image: var(--mask-image);
@@ -222,7 +230,7 @@ em{
 
     transform: scale(1.05) skewY(2deg);
     z-index: 2;
-}
+} */
 
 .accordion{
     --bs-accordion-color: var(--main-white);
