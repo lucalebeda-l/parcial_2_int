@@ -216,7 +216,9 @@ em{
 
 .anim-black:hover .product, .anim-azul:hover .product, .anim-rosa:hover .product {
     mask-image: var(--mask-image);
-    mask-size: cover;
+    mask-size: cover; 
+    -webkit-mask-image: var(--mask-image);
+    -webkit-mask-size: cover;
 
     transform: scale(1.05) skewY(2deg);
     z-index: 2;
