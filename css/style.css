@@ -104,8 +104,12 @@ em{
     gap: 10px;
     font-size: 1.2em;
 }
+.alumno li{
+    list-style: none;
+}
 .alumno a{
     color: var(--main-color);
+
 }
 .alumno a:hover{
     color: var(--sec-color);
@@ -155,6 +159,69 @@ em{
     box-shadow: 0px 0px 25px 0px var(--main-color);
 }
 
+
+.anim-black{
+    --mask-image: url('../assets/img/mask-black_512.png');
+}
+.anim-azul{
+    --mask-image: url('../assets/img/mask-azul_512.png');
+
+}
+.anim-rosa{
+    --mask-image: url('../assets/img/mask-rosa_512.png');
+}
+
+.anim-black .product, .anim-azul .product, .anim-rosa .product{
+    transition: transform 140ms ease;
+    overflow: hidden;
+}
+
+.anim-black:hover .product::after, .anim-azul:hover .product::after, .anim-rosa:hover .product::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    transform: rotate(25deg) scaleY(200%);
+    filter: opacity(0);
+    display: block;
+    height: 100%;
+    width: 20px;
+    background-color: var(--main-white);
+    mix-blend-mode: luminosity;
+    animation: shine 3s ease-out infinite;
+}
+
+@keyframes shine{
+    0%, 100% {
+        filter: opacity(0);
+    }
+
+    20% {
+        filter: opacity(1) blur(10px) brightness(1.5);
+    }
+
+    40% {
+        left: 150%;
+        filter: opacity(1);
+    }
+
+    41%{
+        filter: opacity(0);
+    }
+
+    100%{
+        left: -50px;
+    }
+}
+
+.anim-black:hover .product, .anim-azul:hover .product, .anim-rosa:hover .product {
+    mask-image: var(--mask-image);
+    mask-size: cover;
+
+    transform: scale(1.05) skewY(2deg);
+    z-index: 2;
+}
+
 .accordion{
     --bs-accordion-color: var(--main-white);
     --bs-accordion-bg: var(--main-black);
@@ -188,6 +255,16 @@ em{
         width: 50%;
         margin: auto;
     }
+
+    .anim-black{
+    --mask-image: url('../assets/img/mask-black_256.png');
+    }
+    .anim-azul{
+        --mask-image: url('../assets/img/mask-azul_256.png');
+    }
+    .anim-rosa{
+        --mask-image: url('../assets/img/mask-rosa_256.png');
+    }
 }
 @media screen and (max-width:768px) {
     .navbar-collapse ul li{
@@ -206,6 +283,16 @@ em{
     #preguntas{
         width: 70%;
         margin: auto;
+    }
+
+    .anim-black{
+    --mask-image: url('../assets/img/mask-black_768.png');
+    }
+    .anim-azul{
+        --mask-image: url('../assets/img/mask-azul_768.png');
+    }
+    .anim-rosa{
+        --mask-image: url('../assets/img/mask-rosa_768.png');
     }
 }
 @media screen and (max-width:560px) {
