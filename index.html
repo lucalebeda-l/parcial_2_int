@@ -27,6 +27,7 @@
                     <li class="nav-item"><a class="text-light p-0 nav-link" href="#productos">Productos</a></li>
                     <li class="nav-item"><a class="text-light p-0 nav-link" href="#tienda">Tienda</a></li>
                     <li class="nav-item"><a class="text-light p-0 nav-link" href="#clientes">Clientes</a></li>
+                    <li class="nav-item"><a class="text-light p-0 nav-link" href="#faq">Faq</a></li>
                     <li class="nav-item"><a class="text-light p-0 nav-link" href="#contacto">Contacto</a></li>
                 </ul>
             </div>
@@ -95,6 +96,47 @@
 
 
     <main>
+        <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <picture>
+                    <source srcset="assets/carrousel/banner_3.png" media="(min-width: 1280px)">
+                    <source srcset="assets/carrousel/banner3_1280.png" media="(min-width: 768px)">
+                    <img src="assets/carrousel/banner3_768.png" class="d-block w-100" alt="Banner EchoWay nuevo ingreso auriculares hyperx">
+                </picture>
+            </div>
+
+            <div class="carousel-item">
+                <picture>
+                    <source srcset="assets/carrousel/banner_1.png" media="(min-width: 1280px)">
+                    <source srcset="assets/carrousel/banner1_1280.png" media="(min-width: 768px)">
+                    <img src="assets/carrousel/banner1_768.png" class="d-block w-100" alt="Banner EchoWay presentacion de auriculares">
+                </picture>
+            </div>
+            <div class="carousel-item">
+                <picture>
+                    <source srcset="assets/carrousel/banner_2.png" media="(min-width: 1280px)">
+                    <source srcset="assets/carrousel/banner2_1280.png" media="(min-width: 768px)">
+                    <img src="assets/carrousel/banner2_768.png" class="d-block w-100" alt="Banner EchoWay oferta de auricular 60% off">
+                </picture>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+        </div>
+
+
         <section class="d-flex flex-column justify-content-evenly text-right nos" id="nosotros">
             <h2 class="ps-xl-5">Somos <span>EchoWay</span></h2>
 
@@ -103,40 +145,6 @@
                 <p class="lh-base ps-xl-5 fs-5" >A lo largo de los años, hemos construido una comunidad de usuarios que valoran la <strong>calidad</strong>, la <strong>durabilidad</strong> y la <strong>eficiencia</strong>. Nuestra filosofía se centra en tres pilares: <strong>innovación responsable</strong>, <strong>accesibilidad</strong> y <strong>diseño funcional</strong>. En EcoTech Solutions, cada producto es diseñado pensando en mejorar la vida cotidiana de las personas, mientras contribuimos a un futuro más sostenible.</p>
             </div>
 
-            <div id="preguntas" class="col-4 ps-xl-5">
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item ">
-                      <h2 class="accordion-header ">
-                        <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"  aria-expanded="false" aria-controls="flush-collapseOne">
-                          Pregunta Frecuente 1
-                        </button>
-                      </h2>
-                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <>.accordion-flush</   code> class. This is the first item’s accordion body.</div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"  aria-expanded="false" aria-controls="flush-collapseTwo">
-                          Pregunta Frecuente 2
-                        </button>
-                      </h2>
-                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <>.accordion-flush</   code> class. This is the second item’s accordion body. Let’s imagine this being filled with some actual content.</div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"    aria-expanded="false" aria-controls="flush-collapseThree">
-                          Pregunta Frecuente 3
-                        </button>
-                      </h2>
-                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <>.accordion-flush</   code> class. This is the third item’s accordion body. Nothing more exciting happening here in terms of content, but just filling   up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world  application.</div>
-                      </div>
-                    </div>
-                </div>
-            </div>
         </section>
 
         <section id="tienda">
@@ -342,6 +350,44 @@
 
             </div>
 
+        </section>
+
+        <section id="faq">
+            <h2>Preguntas Frecuentes</h2>
+            <div id="preguntas" class="col-4 ps-xl-5">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item ">
+                      <h2 class="accordion-header ">
+                        <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"  aria-expanded="false" aria-controls="flush-collapseOne">
+                          Pregunta Frecuente 1
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body ">Placeholder content for this accordion, which is intended to d</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"  aria-expanded="false" aria-controls="flush-collapseTwo">
+                          Pregunta Frecuente 2
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrat the second item’s accordion body. Let’s imagine this being filled with some actual content.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"    aria-expanded="false" aria-controls="flush-collapseThree">
+                          Pregunta Frecuente 3
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstra class. This is the third item’s accordion body. Nothing more exciting happening here in terms of content, but just filling   up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world  application.</div>
+                      </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>

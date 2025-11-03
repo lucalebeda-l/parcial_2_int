@@ -3,7 +3,9 @@
 
 :root{
     --main-color: #c11a1a;
+    --sec-color: #ff6262;
     --main-black: #131313;
+    --sec-black: #1b1b1b;
     --main-white: #c7c7c7;
 }
 
@@ -60,7 +62,7 @@ em{
     height: 100vh;
 }
 .nos h2{
-    font-size: 4em;
+    font-size: 5.5em;
 }
 .nos h2 span{
     color: var(--main-color);
@@ -73,14 +75,6 @@ em{
 .info-nosotros{
     width: 50%;
 }
-.sabermas{
-    background-color: var(--main-color);
-    width: 140px;
-    transition: all 120ms ease-in;
-}
-.sabermas:hover{
-    background-color: hsla(from var(--main-color) h 50 60);
-}
 
 #a-modal{
     font-size: 0;
@@ -89,7 +83,7 @@ em{
     cursor: pointer;
 }
 .user:hover{
-    background-color: hsla(from var(--main-color) h 50 60);
+    background-color: var(--sec-color);
 }
 
 .modal-header{
@@ -114,7 +108,7 @@ em{
     color: var(--main-color);
 }
 .alumno a:hover{
-    color: hsla(from var(--main-color) h 50 60);
+    color: var(--sec-color);
 }
 .alumno picture img{
     width: 250px;
@@ -140,17 +134,17 @@ em{
 
 .btn-primary{
     background-color: var(--main-color);
-    border-color: hsla(from var(--main-color) h s calc(l - 10));
+    border-color: var(--main-color);
 }
 
 .btn-primary:hover{
-    background-color: hsla(from var(--main-color) h s calc(l - 10));
-    border-color: hsla(from var(--main-color) h s calc(l - 10));
+    background-color: var(--sec-color);
+    border-color: var(--sec-color);
 }
 
 .card{
-    box-shadow: 0px 0px 10px 0px hsla(from var(--main-white) h s l / 50%);
-    background-color: hsla(from var(--main-black) h 0 10);
+    box-shadow: 0px 0px 8px 0px var(--main-white);
+    background-color: var(--sec-black);
     color: var(--main-white);
     transition: all 140ms ease-in-out;
 }
@@ -158,8 +152,7 @@ em{
     color: var(--main-color);
 }
 .card:hover{
-    box-shadow: 0px 0px 25px 0px hsla(from var(--main-color) h s l / 50%);
-    background-color: hsla(from var(--main-color) h 0 10);
+    box-shadow: 0px 0px 25px 0px var(--main-color);
 }
 
 .accordion{
