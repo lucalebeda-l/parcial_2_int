@@ -69,13 +69,37 @@ em{
     font-weight: 900;
     font-style: italic;
 }
-.user picture img{
-    width: 30px;
-}
 .info-nosotros{
     width: 50%;
 }
+.prod{
+    background-color: transparent;
+    background-image: url(../assets/prod.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.prod h2{
+    font-size: 5.5em;
+    width: 75%;
+    text-align: end;
+    margin-left: auto;
+}
+.prod h2 span{
+    color: var(--main-color);
+    font-weight: 900;
+    font-style: italic;
+}
+.info-productos{
+    width: 50%;
+    margin-left: auto;
+}
 
+
+.user picture img{
+    width: 30px;
+}
 #a-modal{
     font-size: 0;
 }
@@ -249,17 +273,26 @@ em{
         background-image: url(../assets/au_600.png);
         text-align: center;
     }
-    .info-nosotros p,.info-nosotros, .sabermas{
-        margin: 0 auto;
+    .prod{
+        background-image: url(../assets/prod_1200.png);
+        text-align: center;
     }
-    .info-nosotros{
+    .info-nosotros p,.info-nosotros, .info-productos p, .info-productos{
+        margin: 0 auto;
+        text-align: center!important;
+    }
+    .info-nosotros, .info-productos{
         display: flex;
         flex-direction: column;
         gap: 20px;
         width: 75%;
     }
-    .info-nosotros p{
+    .info-nosotros p, .info-productos p{
         font-size: 1.3em!important;
+    }
+    .prod h2{
+        text-align: center;
+        margin: 0 auto;
     }
     #preguntas{
         width: 50%;
@@ -283,10 +316,10 @@ em{
         width: 100vw;
         padding: 13px;
     }
-    .nos h2{
+    .nos h2, .prod h2{
     font-size: 4.5em;
     }
-    .info-nosotros p{
+    .info-nosotros p, .info-productos p{
         font-size: 1.2em!important;
     }
 
@@ -306,27 +339,34 @@ em{
     }
 }
 @media screen and (max-width:560px) {
-    .nos{
+    .nos, .prod{
         justify-content: center;
     }
-    .nos h2{
+    .prod{
+        background-image: url(../assets/prod_600.png);
+    }
+    .nos h2, .prod h2{
     font-size: 3.5em;
     }
 }
 @media screen and (max-width:460px) {
-    .info-nosotros{
+    .info-nosotros, .info-productos{
         width: 85%;
     }
-    .info-nosotros p{
+    .info-nosotros p, .info-productos p{
         font-size: 1.1em!important;
     }
 }
 @media screen and (max-width:300px) {
-    .nos h2{
+    .nos, .prod{
+        height: auto;
+        padding: 40px 10px;
+    }
+    .nos h2, .prod h2{
         margin-top: 10px;
         font-size: 2.5em;
     }
-    .info-nosotros{
+    .info-nosotros, .info-productos{
         width: 90%;
     }
 }
