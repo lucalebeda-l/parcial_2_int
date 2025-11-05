@@ -223,6 +223,32 @@ em{
     animation: shine 3s ease-out infinite;
 }
 
+.opi h2, #tienda h2{
+    margin-top: 100px;
+}
+
+.puntaje li {
+    list-style: none;
+}
+.puntaje li i{
+    color: var(--main-color);
+}
+
+.cardsClientes{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#faq{
+    color: var(--main-color);
+    background-color: var(--main-white);
+    padding: 20px 0 60px 0;
+}
+
+
 @keyframes shine{
     0%, 100% {
         filter: opacity(0);
