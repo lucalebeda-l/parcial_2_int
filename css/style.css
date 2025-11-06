@@ -294,6 +294,22 @@ em{
     --bs-accordion-active-bg: var(--main-color);
 }
 
+.form-control, .form-select{
+    --bs-body-bg: var(--sec-black);
+    --bs-border-color: var(--main-white);
+    --bs-body-color: var(--main-white);
+}
+.form-control:focus, .form-select:focus{
+    border-color: hsla(from var(--main-white) h calc(s - 10) l);
+    outline: 0;
+    box-shadow: 0 0 0 .25rem hsla(from var(--main-white) h s l / 50%);
+}
+
+#formulario label{
+    --bs-body-bg: var(--sec-black);
+   color: var(--main-color);
+}
+
 @media screen and (max-width:1200px) {
     .nos{
         background-image: url(../assets/au_600.png);
