@@ -42,9 +42,13 @@ header{
     border-radius: 100%;
     padding: 4px 5px;
 }
-.nav-link:hover{
+header .nav-link:hover{
     color: var(--main-color)!important;
     text-decoration: overline;
+}
+footer .nav-link:hover{
+    color: var(--main-color)!important;
+    text-decoration: underline;
 }
 
 strong{
@@ -128,7 +132,7 @@ em{
     gap: 10px;
     font-size: 1.2em;
 }
-.alumno li{
+.alumno li, footer li{
     list-style: none;
 }
 .alumno a{
@@ -161,6 +165,20 @@ em{
 }
 
 .btn-primary{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--main-color);
+    --bs-btn-border-color: hsla(from var(--main-color) h s calc(l - 5));
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: hsla(from var(--main-color) h s calc(l + 10));
+    --bs-btn-hover-border-color: var(--main-color);
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--main-color);
+    --bs-btn-active-border-color: hsla(from var(--main-color) h s calc(l - 5));
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--main-color);
+    --bs-btn-disabled-border-color: hsla(from var(--main-color) h s calc(l - 5));
+
     background-color: var(--main-color);
     border-color: var(--main-color);
 }
@@ -244,7 +262,7 @@ em{
 
 #faq{
     color: var(--main-color);
-    background-color: var(--main-white);
+    background-color: hsla(from var(--main-black) h s calc(l + 5));
     padding: 20px 0 60px 0;
 }
 
@@ -305,9 +323,15 @@ em{
     box-shadow: 0 0 0 .25rem hsla(from var(--main-white) h s l / 50%);
 }
 
-#formulario label{
+#contacto label{
     --bs-body-bg: var(--sec-black);
-   color: var(--main-color);
+    color: var(--main-color);
+}
+
+footer{
+    min-height: 30vh;
+    height: fit-content;
+    background-color: hsla(from var(--main-black) h s calc(l + 5));
 }
 
 @media screen and (max-width:1200px) {
