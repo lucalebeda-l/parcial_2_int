@@ -334,6 +334,11 @@ footer{
     background-color: hsla(from var(--main-black) h s calc(l + 5));
 }
 
+#submit{
+    max-width: 200px;
+    width: 100%;
+}
+
 @media screen and (max-width:1200px) {
     .nos{
         background-image: url(../assets/au_600.png);
@@ -421,6 +426,9 @@ footer{
     }
     .info-nosotros p, .info-productos p{
         font-size: 1.1em!important;
+    }   
+    #submit{
+        width: 100%;
     }
 }
 @media screen and (max-width:300px) {
@@ -434,5 +442,10 @@ footer{
     }
     .info-nosotros, .info-productos{
         width: 90%;
+    }
+   #submit{
+       width: auto;
+       max-width: 100%;
+       min-width: 100%;
     }
 }
