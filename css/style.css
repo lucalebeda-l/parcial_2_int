@@ -104,10 +104,10 @@ em{
 .user picture img{
     width: 30px;
 }
-#a-modal{
+#a-modal, #a-modal-2{
     font-size: 0;
 }
-#a-modal:hover{
+#a-modal:hover,#a-modal-2:hover{
     cursor: pointer;
 }
 .user:hover{
